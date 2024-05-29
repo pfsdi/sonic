@@ -1,0 +1,20 @@
+ {
+  "reward": {
+    "variables": {
+      "goal": {"reward": 10000.0},
+      "rings": {"reward": 1.0},
+      "score": {"reward": 1.0},
+      "x": {"reward": 1.0},
+      "speed": {"reward": 1.0},
+      "groundslide": {"reward": -100},
+      "lives": {"reward": -100, "condition": "<", "value": 2}
+    }
+  },
+  "done": {
+    "condition": "any",
+    "variables": {
+      "goal": {"op": "equal", "reference": -1}
+    }
+  },
+  "crop": [0, 0, 0, 0]
+}
